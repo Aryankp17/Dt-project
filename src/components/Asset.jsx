@@ -9,7 +9,7 @@ import { Expand } from 'lucide-react';
 import { Ellipsis } from 'lucide-react';
 import { ChevronUp } from 'lucide-react';
 
-const Asset = ({ item }) => {
+const Asset = ({ item,idx }) => {
   const [open, setOpen] = useState(true)
   const [threadbuild, setthreadbuild] = useState(true)
   const [saIntro, setsaIntro] = useState(true)
@@ -147,7 +147,7 @@ const Asset = ({ item }) => {
   )
 
   return (
-    <div className={` lg:w-110 w-70 rounded-2xl shadow-2xl bg-white overflow-hidden ${open ? 'h-120' : 'h-10'}`} style={{ transition: 'all 0.3s ease-in-out' }}>
+    <div key={idx} className={` lg:w-110 w-70 rounded-2xl shadow-2xl bg-white overflow-hidden ${open ? 'h-120' : 'h-10'}`} style={{ transition: 'all 0.3s ease-in-out' }}>
       <div className='w-full h-10 flex text-sm bg-black px-3 flex items-center justify-between text-white'>
         <h1 className='mx-auto'>{item.asset_title}</h1>
         <CircleAlert onClick={() => setOpen(!open)} className='cursor-pointer active:scale-90' />
@@ -157,9 +157,7 @@ const Asset = ({ item }) => {
           <p className=' text-left text-xs lg:text-lg lg:leading-5 leading:4'><span className='font-semibold'>Description: </span>{item.asset_description}</p>
         </div>
         {getassetcontent()}
-
       </div>
-
     </div>
   )
 }
