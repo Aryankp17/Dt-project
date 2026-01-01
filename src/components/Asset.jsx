@@ -56,13 +56,13 @@ const Asset = ({ item,idx }) => {
             <textarea rows={10} className='w-full bg-white px-2 py-1 rounded-t-2xl h-[100%] border-0 outline-0 resize-none ' name="" id="" placeholder='Enter text here'></textarea>
           </div>
         </div>
-        <div className='w-full h-20 flex items-center justify-between lg:flex-row flex-col px-5 mt-3'>
-          <img className='lg:size-30 size-20' src={threadimg} alt="" />
+        <div className='w-full h-20 flex items-center justify-between lg:flex-row flex-col px-3 mt-3'>
+          <img className='lg:size-25 size-20' src={threadimg} alt="" />
           <div className='flex'>
-            <select className='p-2 shadow-2xl bg-white rounded-lg font-semibold' name="" id="">
+            <select className='p-1 shadow-2xl bg-white rounded-lg font-semibold' name="" id="">
             <option value="">Select Categ</option>
           </select>
-          <select className='p-2 shadow-2xl bg-white rounded-lg font-semibold' name="" id="">
+          <select className='p-1 shadow-2xl bg-white rounded-lg font-semibold' name="" id="">
             <option value="">Select Proces</option>
           </select>
           </div>
@@ -72,7 +72,7 @@ const Asset = ({ item,idx }) => {
             <Plus size={18} />
             <span className='text-sm'>Sub thread</span>
           </button>
-          <div className=' mx-auto lg:w-100 w-full h-full py-1 bg-gray-300 shadow-2xl overflow-hidden rounded-2xl'>
+          <div className=' mx-auto lg:w-full w-full h-full py-1 bg-gray-300 shadow-2xl overflow-hidden rounded-2xl'>
             <span className='rounded-t-2xl font-semibold ml-2'>Summary of Thread A</span>
             <textarea rows={10} className='w-full bg-white px-2 py-1 rounded-t-2xl h-[100%] border-0 outline-0 resize-none ' name="" id="" placeholder='Enter text here'></textarea>
           </div>
@@ -90,8 +90,8 @@ const Asset = ({ item,idx }) => {
       <div className='mt-3'>
         <label className='font-medium' htmlFor="content">Content</label>
         <div className='w-full shadow-2xl rounded-lg  h-70 '>
-          <div className='w-full lg:h-20 h-25 shadow-xl mt-2 py-2 px-3 '>
-            <div className=' w-full h-10 flex flex-wrap gap-2 '>
+          <div className='w-full lg:h-20 h-25 shadow-xl mt-2 py-1 px-3 '>
+            <div className=' w-full h-10 flex flex-wrap text-sm gap-1 '>
               <a className=' cursor-pointer'>File</a>
               <a className=' cursor-pointer'>Edit</a>
               <a className=' cursor-pointer'>View</a>
@@ -147,14 +147,14 @@ const Asset = ({ item,idx }) => {
   )
 
   return (
-    <div key={idx} className={` lg:w-110 w-70 rounded-2xl shadow-2xl bg-white overflow-hidden ${open ? 'h-120' : 'h-10'}`} style={{ transition: 'all 0.3s ease-in-out' }}>
+    <div key={idx} className={` lg:w-90 w-70 rounded-2xl shadow-2xl bg-white overflow-hidden ${open ? 'h-120' : 'h-10'}`} style={{ transition: 'all 0.3s ease-in-out' }}>
       <div className='w-full h-10 flex text-sm bg-black px-3 flex items-center justify-between text-white'>
         <h1 className='mx-auto'>{item.asset_title}</h1>
         <CircleAlert onClick={() => setOpen(!open)} className='cursor-pointer active:scale-90' />
       </div>
       <div className=' w-full h-full' style={{ display: 'block', transition: 'display 0.3s ease-in-out' }}>
         <div className='w-full lg:h-20 h-18 p-3 bg-[#FDFDFD] leading-relaxed border-b-2 border-gray-300'>
-          <p className=' text-left text-xs lg:text-lg lg:leading-5 leading:4'><span className='font-semibold'>Description: </span>{item.asset_description}</p>
+          <p className=' text-left text-xs lg:text-sm lg:leading-5 leading:4'><span className='font-semibold'>Description: </span>{item.asset_description}</p>
         </div>
         {getassetcontent()}
       </div>

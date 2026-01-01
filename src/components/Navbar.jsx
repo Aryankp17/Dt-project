@@ -10,7 +10,7 @@ import { EllipsisVertical } from 'lucide-react';
 const Navbar = () => {
   return (
     <div>
-      <div className='flex py-5 bg-[#F0F0F0] lg:px-10 px-1 justify-between items-center w-full fixed z-50'>
+      <div className='flex py-4 bg-[#F0F0F0] lg:px-10 px-1 justify-between items-center w-full fixed z-50'>
         <div>
             <img src={logo} alt="Logo" />
         </div>

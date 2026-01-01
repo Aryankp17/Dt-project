@@ -15,10 +15,10 @@ const Homepage = () => {
       <Content />
       <Noticeboard />
       <div className='flex justify-end items-end fixed right-0 bottom-0'>
-        <div className='w-20 h-60 px-2 py-3 flex flex-col justify-between items-center'>
-          <img className='w-13 aspect-[1/1] bg-blue-600 rounded-4xl p-3 active:scale-90 cursor-pointer' src={question} alt="" />
-          <img className='w-13 aspect-[1/1] bg-blue-600 rounded-4xl p-3 active:scale-90 cursor-pointer' src={teamimg} alt="" />
-          <img className='w-13 aspect-[1/1] bg-blue-600 rounded-4xl p-3 active:scale-90 cursor-pointer' src={meetingimg} alt="" />
+        <div className='w-20 lg:h-50 h-40 px-2 py-3 flex flex-col justify-between items-center'>
+          <img className='w-10 aspect-[1/1] bg-blue-600 rounded-4xl p-2 active:scale-90 cursor-pointer' src={question} alt="" />
+          <img className='w-10 aspect-[1/1] bg-blue-600 rounded-4xl p-2 active:scale-90 cursor-pointer' src={teamimg} alt="" />
+          <img className='w-10 aspect-[1/1] bg-blue-600 rounded-4xl p-2 active:scale-90 cursor-pointer' src={meetingimg} alt="" />
         </div>
       </div>
 
