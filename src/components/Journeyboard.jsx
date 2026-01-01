@@ -20,7 +20,7 @@ const Journeyboard = () => {
                 <li className='font-bold'>Explore the world of management</li>
                 <li >Technical Project Management</li>
                 <li>Threadbuild</li>
-                <li>Structure your pointers</li>
+                <li>Structure you pointers</li>
                 <li>4SA Method</li>
 
             </div>
